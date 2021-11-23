@@ -34,7 +34,7 @@ def main(user_id, user_email):
 if __name__ == '__main__':
     client_id = os.environ['GITHUB_CLIENT_ID']
     client_secret = os.environ['GITHUB_CLIENT_SECRET']
-    redirect_uri = 'http://localhost:8501/'
+    redirect_uri = 'https://share.streamlit.io/miketrizna/streamlit_oauth/github_oauth_example.py'
 
     client = GitHubOAuth2(client_id, client_secret)
     authorization_url = asyncio.run(
